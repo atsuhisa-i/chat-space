@@ -1,0 +1,19 @@
+.side-bar
+  .side-bar__header
+    .side-bar__header__box
+      .side-bar__header__box__name
+        ユーザー
+      %ul.side-bar__header__box__icons
+        %li.side-bar__header__box__icons__make-group
+          = link_to "#" do
+            = icon("fa", "edit")
+        %li.side-bar__header__box__icons__edit-user
+          = link_to "#" do
+            = icon("fa", "cog")
+  .side-bar__group
+    %ul.side-bar__group__list
+      %li.side-bar__group__list__name
+        techcamp
+      %li.side-bar__group__list__message
+        まだメッセージがありません
+    
