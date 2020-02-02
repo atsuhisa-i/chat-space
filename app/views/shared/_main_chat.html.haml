@@ -1,0 +1,33 @@
+.main-chat
+  .main-chat__group
+    %ul.main-chat__group-info
+      %li.main-chat__group-info__current
+        test
+      %li.main-chat__group-info__member
+        Member : ユーザー
+    = link_to "#" do
+      .main-chat__group__edit
+        Edit
+  .main-chat__message
+    .main-chat__message-list
+      .main-chat__message-list__name
+        ユーザー
+      .main-chat__message-list__date
+        2020/1/31(Fri)15:38:00
+    .main-chat__message__text
+      こんにちは
+    .main-chat__message-list2
+      .main-chat__message-list__name
+        ユーザー
+      .main-chat__message-list__date
+        2020/1/31(Fri)15:38:00
+    .main-chat__message__text
+      こんにちは
+  .main-chat__form
+    %form.new-message
+      .message-box
+        %input{type: "text", class: "text", placeholder: "type a message"}
+        %label{class: "image"}
+          = icon('fa','image', class: 'icon')
+          %input{type: 'file', class: 'hidden'}
+      %input{type: 'submit', value: 'Send', class: 'submit__btn'}

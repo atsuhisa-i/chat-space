@@ -1,0 +1,52 @@
+.side-bar {
+  height: 100vh;
+  width: 300px;
+  float: left;
+  &__header {
+    background-color: $sideBarMainColor;
+    height: 100px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    &__box {
+      background-color: $sideBarMainColor;
+      height: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      &__name {
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: $mainWhiteColor;
+      }
+      &__icons {
+        display: flex;
+        i {
+          color: $mainWhiteColor;
+          letter-spacing: 5px;
+        }
+        }
+      }
+    }
+  &__group {
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+    width: 300px;
+    padding: 20px 20px 0;
+    &__list {
+      margin-bottom: 40px;
+      &__name {
+        font-size: 15px;
+        font-weight: bold;
+        color: $mainWhiteColor;
+        margin-bottom: 5px;
+      }
+      &__message {
+        font-size: 11px;
+        font-weight: bold;
+        color: $mainWhiteColor;
+      }
+    }
+  }
+}
