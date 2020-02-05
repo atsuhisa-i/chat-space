@@ -2,13 +2,13 @@
   .side-bar__header
     .side-bar__header__box
       .side-bar__header__box__name
-        ユーザー
+        = current_user.name
       %ul.side-bar__header__box__icons
         %li.side-bar__header__box__icons__make-group
           = link_to "#" do
             = icon("fa", "edit")
         %li.side-bar__header__box__icons__edit-user
-          = link_to "#" do
+          = link_to edit_user_path(current_user) do
             = icon("fa", "cog")
   .side-bar__group
     %ul.side-bar__group__list
